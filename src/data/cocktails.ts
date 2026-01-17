@@ -127,6 +127,127 @@ export const cocktails: Cocktail[] = [
     glass: "Highball",
     category: "Highball",
   },
+  {
+    id: "moscow-mule",
+    name: "Moscow Mule",
+    image:
+      "https://www.thecocktaildb.com/images/media/drink/3pylqc1504370988.jpg",
+    description: "Zingy ginger beer with vodka and fresh lime.",
+    ingredients: [
+      { name: "Vodka", amount: "60 ml" },
+      { name: "Fresh lime juice", amount: "15 ml" },
+      { name: "Ginger beer", amount: "Top" },
+      { name: "Lime wheel", amount: "1" },
+    ],
+    instructions: [
+      "Add vodka and lime juice to a copper mug or highball with ice.",
+      "Top with ginger beer and stir lightly.",
+      "Garnish with a lime wheel.",
+    ],
+    glass: "Mule mug",
+    category: "Highball",
+  },
+  {
+    id: "whiskey-sour",
+    name: "Whiskey Sour",
+    image:
+      "https://www.thecocktaildb.com/images/media/drink/hbkfsh1589574990.jpg",
+    description: "Tart lemon and sweet syrup lift rich whiskey.",
+    ingredients: [
+      { name: "Bourbon whiskey", amount: "60 ml" },
+      { name: "Fresh lemon juice", amount: "30 ml" },
+      { name: "Simple syrup", amount: "15 ml" },
+      { name: "Angostura bitters", amount: "2 dashes" },
+      { name: "Lemon peel", amount: "1" },
+    ],
+    instructions: [
+      "Shake whiskey, lemon juice, syrup, and bitters with ice.",
+      "Strain into a rocks glass over fresh ice.",
+      "Express the lemon peel and garnish.",
+    ],
+    glass: "Rocks",
+    category: "Sour",
+  },
+  {
+    id: "daiquiri",
+    name: "Daiquiri",
+    image:
+      "https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg",
+    description: "A clean, crisp rum sour with bright lime.",
+    ingredients: [
+      { name: "White rum", amount: "60 ml" },
+      { name: "Fresh lime juice", amount: "25 ml" },
+      { name: "Simple syrup", amount: "15 ml" },
+    ],
+    instructions: [
+      "Shake rum, lime juice, and syrup with ice.",
+      "Double strain into a chilled coupe.",
+    ],
+    glass: "Coupe",
+    category: "Sour",
+  },
+  {
+    id: "tom-collins",
+    name: "Tom Collins",
+    image:
+      "https://www.thecocktaildb.com/images/media/drink/4g6xds1582579703.jpg",
+    description: "Effervescent gin sour topped with soda.",
+    ingredients: [
+      { name: "Gin", amount: "60 ml" },
+      { name: "Fresh lemon juice", amount: "30 ml" },
+      { name: "Simple syrup", amount: "15 ml" },
+      { name: "Club soda", amount: "Top" },
+      { name: "Lemon peel", amount: "1" },
+    ],
+    instructions: [
+      "Shake gin, lemon juice, and syrup with ice.",
+      "Strain into an ice-filled highball and top with soda.",
+      "Garnish with a lemon peel.",
+    ],
+    glass: "Highball",
+    category: "Highball",
+  },
+  {
+    id: "cosmopolitan",
+    name: "Cosmopolitan",
+    image:
+      "https://www.thecocktaildb.com/images/media/drink/kpsajh1504368362.jpg",
+    description: "Citrusy, lightly sweet, and cranberry-bright.",
+    ingredients: [
+      { name: "Vodka", amount: "45 ml" },
+      { name: "Triple sec", amount: "15 ml" },
+      { name: "Cranberry juice", amount: "30 ml" },
+      { name: "Fresh lime juice", amount: "15 ml" },
+      { name: "Orange peel", amount: "1" },
+    ],
+    instructions: [
+      "Shake all ingredients with ice until chilled.",
+      "Double strain into a chilled coupe.",
+      "Express the orange peel and garnish.",
+    ],
+    glass: "Coupe",
+    category: "Martini",
+  },
+  {
+    id: "boulevardier",
+    name: "Boulevardier",
+    image:
+      "https://www.thecocktaildb.com/images/media/drink/km84qi1513705868.jpg",
+    description: "A whiskey-forward cousin to the Negroni.",
+    ingredients: [
+      { name: "Bourbon whiskey", amount: "30 ml" },
+      { name: "Sweet vermouth", amount: "30 ml" },
+      { name: "Campari", amount: "30 ml" },
+      { name: "Orange peel", amount: "1" },
+    ],
+    instructions: [
+      "Stir bourbon, vermouth, and Campari with ice until chilled.",
+      "Strain over a large cube in a rocks glass.",
+      "Express the orange peel and garnish.",
+    ],
+    glass: "Rocks",
+    category: "Aperitif",
+  },
 ];
 
 export const getCocktailById = (id: string) =>

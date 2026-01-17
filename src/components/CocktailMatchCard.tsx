@@ -34,10 +34,10 @@ const CocktailMatchCard = ({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent" />
         <span
-          className={`absolute right-4 top-4 rounded-full px-3 py-1 text-xs uppercase tracking-[0.2em] ${
+          className={`absolute right-4 top-4 rounded-full px-3 py-1 text-xs uppercase tracking-[0.2em] shadow-lg ring-1 ring-white/30 ${
             isComplete
-              ? "bg-amber-200/80 text-slate-950"
-              : "bg-rose-200/20 text-rose-100"
+              ? "bg-amber-200 text-slate-950"
+              : "bg-rose-500 text-white"
           }`}
         >
           {isComplete
