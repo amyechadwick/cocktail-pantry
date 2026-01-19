@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## App Screenshots
 
-## Getting Started
+![Homepage screenshot](assets/homepage-screenshot.png)
+![Pantry page screenshot](assets/pantry-page-screenshot.png)
+![Recipe page screenshot](assets/recipe-page-screenshot.png)
 
-First, run the development server:
+# Cocktail Pantry
+
+A simple, visual way to see which cocktails you can make from the ingredients you already have.
+
+## Motivation
+
+I built Cocktail Pantry to learn how to vibe code and quickly turn product ideas into testable proof-of-concepts as an aspiring product manager. I also love making cocktails, so I wanted an app that tells me what I can mix from the ingredients already in my cupboard.
+
+
+## What you can do
+
+- Browse featured cocktails on the home page.
+- Select the ingredients in your pantry to get exact matches first.
+- See close matches that are missing two ingredients or fewer.
+- Open a recipe page with ingredients and steps.
+- Your pantry selection is saved locally in your browser so it stays between visits.
+
+## How to run locally (step-by-step)
+
+1. Install Node.js (version 18 or newer is safest).
+2. In this project folder, install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the local app:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open the URL shown in the terminal (usually `http://localhost:3000`).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Where the app data lives
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Cocktail data: `src/data/cocktails.ts`
+- Ingredient list: `src/data/ingredients.ts`
+- Matching logic: `src/utils/cocktailMatcher.ts`
 
-## Learn More
+## Project layout (high level)
 
-To learn more about Next.js, take a look at the following resources:
+- App pages: `src/app/`
+- UI components: `src/components/`
+- Static assets (screenshots): `assets/`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js + React + TypeScript
+- Tailwind CSS
